@@ -5,8 +5,8 @@ tap "homebrew/core"
 
 # cli tools
 brew "git"
-brew "python@3.9"
-brew "zsh"
+brew "node"
+brew "python"
 
 # programs
 cask "adobe-creative-cloud"
