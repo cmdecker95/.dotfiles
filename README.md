@@ -1,8 +1,4 @@
-# .dotfiles
-
----
-
-## Steps to bootstrap a new Mac
+# Steps to bootstrap a new Mac
 
 1. Install Apple's Command Line Tools, which are prerequisites for Git and Homebrew.
 
