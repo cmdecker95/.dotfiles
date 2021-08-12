@@ -9,6 +9,7 @@ brew "node"
 brew "python"
 
 # programs
+cask "ableton-live-standard"
 cask "adobe-creative-cloud"
 cask "firefox"
 cask "google-chrome"
