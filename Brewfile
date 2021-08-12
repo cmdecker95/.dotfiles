@@ -9,11 +9,11 @@ brew "node"
 brew "python"
 
 # programs
-cask "ableton-live-lite"
 cask "adobe-creative-cloud"
 cask "firefox"
 cask "google-chrome"
 cask "native-access"
+cask "slack"
 cask "spitfire-audio"
 cask "splice"
 cask "visual-studio-code"
