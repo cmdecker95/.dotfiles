@@ -11,6 +11,8 @@ brew "python"
 # programs
 cask "ableton-live-standard"
 cask "adobe-creative-cloud"
+cask "brave-browser"
+cask "discord"
 cask "firefox"
 cask "google-chrome"
 cask "native-access"
