@@ -5,6 +5,7 @@ tap "homebrew/core"
 
 # cli tools
 brew "git"
+brew "jupyter"
 brew "node"
 brew "python"
 
