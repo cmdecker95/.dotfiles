@@ -5,3 +5,4 @@ PROMPT='
 
 # Open Jupyter
 alias jn='jupyter notebook'
+alias jl='jupyter lab'
