@@ -6,6 +6,7 @@ PROMPT='
 # Open Jupyter
 alias jn='jupyter notebook'
 alias jl='jupyter lab'
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/Users/cmdecker/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -20,4 +21,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
