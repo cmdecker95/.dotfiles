@@ -1,6 +1,6 @@
 # Steps to bootstrap a new Mac
 
-1. Install Apple's Command Line Tools, which are prerequisites for Git and Homebrew.
+1. Install Apple's Command Line Tools, which are prerequisites for Git.
 
 ```zsh
 xcode-select --install
@@ -40,27 +40,17 @@ New SSH key
 # Click "Add SSH key" and enter passphrase.
 ```
 
-3. Clone repo into new hidden directory.
+3. Set up Git, then clone repo into new hidden directory.
 
 ```zsh
+git config --global user.name "Christian Decker"
+git config --global user.email "50999401+cmdecker95@users.noreply.github.com"
 git clone git@github.com:cmdecker95/.dotfiles.git
 ```
 
 4. Create symlinks on the home directory to the real files in the repo.
 
 ```zsh
-ln -s ~/.dotfiles/<filename> ~/<filename>
-```
-
-5. Install Homebrew, followed by the software listed in the Brewfile.
-
-```zsh
-# Install Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-# Then pass in the Brewfile location...
-brew bundle --file ~/.dotfiles/Brewfile
-
-# ...or move to the directory first.
-cd ~/.dotfiles && brew bundle
+ln -s ~/.dotfiles/.zshrc ~/.zshrc
+ln -s ~/.dotfiles/.zprofile ~/.zprofile
 ```
