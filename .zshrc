@@ -3,7 +3,8 @@ PROMPT='
 %F{blue}%n%f on %F{green}%m%f in %F{yellow}%~%f
 λ '
 
-# Open Jupyter
+# Aliases
+alias ds='conda activate ds'
 alias jn='jupyter notebook'
 alias jl='jupyter lab'
 
