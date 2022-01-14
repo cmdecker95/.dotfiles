@@ -1,12 +1,16 @@
 # Terminal Style
 PROMPT='
-%F{blue}%n%f on %F{green}%m%f in %F{yellow}%~%f
+%B%S%F{white} %n %f%b%F{cyan} %~ %f%s
 λ '
 
 # Aliases
+alias bs='conda activate base'
 alias ds='conda activate ds'
-alias jn='jupyter notebook'
+alias dx='conda deactivate'
 alias jl='jupyter lab'
+alias jn='jupyter notebook'
+alias pip='pip3'
+alias python='python3'
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -22,3 +26,9 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+# VS Code
+code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+
+# Autojump
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
