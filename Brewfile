@@ -18,7 +18,7 @@ brew "tree"
 # >>> CASK FORMULAE >>>
 
 # comms
-cask "betterdiscord-installer"
+cask "discord"
 cask "slack"
 cask "upwork"
 cask "zoom"
