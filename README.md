@@ -2,6 +2,12 @@
 
 Follow these steps to **automatically install all your applications** on a new Mac!
 
+> #### These steps assume that you have a `.dotfiles` repo on your own GitHub account.
+> If you don't already have one, **fork this repo**, and customize the settings to your liking!
+> I recommend that you create your own Brewfile by running `brew bundle dump`.
+> #### New to [Homebrew](https://brew.sh)?
+> It's a _package manager_ to neatly and efficiently install apps to MacOS (or Linux). No more "drag to install" prompts!
+
 ### Install the Apple CLT → Git 🔓
 
 ```Bash
