@@ -11,6 +11,7 @@ alias jl='jupyter lab'
 alias jn='jupyter notebook'
 alias pip='pip3'
 alias python='python3'
+alias ss='eval $(starship init zsh)'
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
