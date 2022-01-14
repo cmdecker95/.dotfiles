@@ -10,9 +10,10 @@ tap "homebrew/cask-fonts"
 
 # >>> CORE FORMULAE >>>
 
-# essentials
 brew "autojump"
+brew "cmatrix"
 brew "git"
+brew "neovim"
 brew "tree"
 
 # >>> CASK FORMULAE >>>
