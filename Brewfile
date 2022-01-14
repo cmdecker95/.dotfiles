@@ -14,6 +14,7 @@ brew "autojump"
 brew "cmatrix"
 brew "git"
 brew "neovim"
+brew "starship"
 brew "tree"
 
 # >>> CASK FORMULAE >>>
