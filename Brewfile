@@ -11,17 +11,17 @@ tap "homebrew/cask-fonts"
 # >>> CORE FORMULAE >>>
 
 brew "autojump"
-brew "cmatrix"
 brew "git"
 brew "neovim"
+brew "starship"
 brew "tree"
 
 # >>> CASK FORMULAE >>>
 
-# comms
+# apps
+cask "adobe-creative-cloud"
 cask "discord"
 cask "slack"
-cask "upwork"
 cask "zoom"
 
 # fonts
@@ -29,6 +29,7 @@ cask "font-fira-code-nerd-font"
 cask "font-hack-nerd-font"
 
 # main development
+cask "iterm2"
 cask "miniforge"
 cask "visual-studio-code"
 
