@@ -27,6 +27,7 @@ cask "zoom"
 # fonts
 cask "font-fira-code-nerd-font"
 cask "font-hack-nerd-font"
+cask "rocket"
 
 # main development
 cask "iterm2"
