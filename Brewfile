@@ -24,10 +24,13 @@ cask "discord"
 cask "slack"
 cask "zoom"
 
+# quality of life
+cask "rocket"
+cask "vanilla"
+
 # fonts
 cask "font-fira-code-nerd-font"
 cask "font-hack-nerd-font"
-cask "rocket"
 
 # main development
 cask "iterm2"
