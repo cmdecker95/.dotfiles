@@ -25,6 +25,7 @@ cask "slack"
 cask "zoom"
 
 # quality of life
+cask "alfred"
 cask "rocket"
 cask "vanilla"
 
