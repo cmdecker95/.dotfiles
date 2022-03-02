@@ -22,6 +22,7 @@ brew "tree"
 cask "adobe-creative-cloud"
 cask "discord"
 cask "slack"
+cask "whatsapp"
 cask "zoom"
 
 # quality of life
