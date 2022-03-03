@@ -13,6 +13,7 @@ tap "homebrew/cask-fonts"
 brew "autojump"
 brew "git"
 brew "neovim"
+brew "r"
 brew "starship"
 brew "tree"
 
@@ -40,5 +41,8 @@ cask "miniforge"
 cask "visual-studio-code"
 
 # java development
-cask "eclipse-java"
+cask "intellij-idea-ce"
 cask "oracle-jdk"
+
+# r development
+cask "rstudio"
