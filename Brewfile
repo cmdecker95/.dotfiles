@@ -13,7 +13,6 @@ tap "homebrew/cask-fonts"
 brew "autojump"
 brew "git"
 brew "neovim"
-brew "r"
 brew "starship"
 brew "tree"
 
@@ -35,14 +34,11 @@ cask "vanilla"
 cask "font-fira-code-nerd-font"
 cask "font-hack-nerd-font"
 
-# main development
+# development
 cask "iterm2"
+
 cask "miniforge"
-cask "visual-studio-code"
+cask "pycharm"
 
-# java development
-cask "intellij-idea-ce"
 cask "oracle-jdk"
-
-# r development
-cask "rstudio"
+cask "intellij-idea"
