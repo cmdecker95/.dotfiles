@@ -28,6 +28,7 @@ cask "zoom"
 # quality of life
 cask "alfred"
 cask "rocket"
+cask "vanilla"
 
 # fonts
 cask "font-fira-code-nerd-font"
