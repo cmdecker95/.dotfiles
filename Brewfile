@@ -12,7 +12,6 @@ tap "homebrew/cask-fonts"
 
 brew "autojump"
 brew "git"
-brew "neovim"
 brew "starship"
 brew "tree"
 
@@ -21,6 +20,7 @@ brew "tree"
 # apps
 cask "adobe-creative-cloud"
 cask "discord"
+cask "obs"
 cask "slack"
 cask "whatsapp"
 cask "zoom"
