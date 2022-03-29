@@ -20,13 +20,13 @@ brew "tree"
 # apps
 cask "adobe-creative-cloud"
 cask "discord"
-cask "obs"
 cask "slack"
 cask "whatsapp"
 cask "zoom"
 
 # quality of life
 cask "alfred"
+cask "mos"
 cask "rocket"
 cask "vanilla"
 
@@ -36,9 +36,6 @@ cask "font-hack-nerd-font"
 
 # development
 cask "iterm2"
-
+cask "jetbrains-toolbox"
 cask "miniforge"
-cask "pycharm"
-
 cask "oracle-jdk"
-cask "intellij-idea"
