@@ -21,7 +21,6 @@ brew "tree"
 cask "adobe-creative-cloud"
 cask "discord"
 cask "slack"
-cask "whatsapp"
 cask "zoom"
 
 # quality of life
@@ -29,6 +28,7 @@ cask "alfred"
 cask "mos"
 cask "rocket"
 cask "vanilla"
+cask "webex-meetings"
 
 # fonts
 cask "font-fira-code-nerd-font"
