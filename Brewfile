@@ -12,6 +12,7 @@ tap "homebrew/cask-fonts"
 
 brew "autojump"
 brew "git"
+brew "node"
 brew "starship"
 brew "tree"
 
@@ -28,7 +29,6 @@ cask "alfred"
 cask "mos"
 cask "rocket"
 cask "vanilla"
-cask "webex-meetings"
 
 # fonts
 cask "font-fira-code-nerd-font"
