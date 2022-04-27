@@ -31,6 +31,7 @@ cask "rocket"
 cask "vanilla"
 
 # fonts
+cask "font-caskaydia-cove-nerd-font"
 cask "font-fira-code-nerd-font"
 cask "font-hack-nerd-font"
 

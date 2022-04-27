@@ -2,7 +2,8 @@
 alias py='conda activate'
 alias ds='conda activate ds'
 alias xx='conda deactivate'
-alias jn='jupyter notebook'
+alias jn='jupyter notebook ~/Documents/Code'
+alias jl='jupyter lab ~/Documents/Code'
 alias ss='eval $(starship init zsh)'
 
 
