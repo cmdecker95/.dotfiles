@@ -25,4 +25,3 @@ fi
 
 # Start in Starship Prompt
 ss
-test -e /Users/christian/.iterm2_shell_integration.zsh && source /Users/christian/.iterm2_shell_integration.zsh || true
