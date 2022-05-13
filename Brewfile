@@ -21,7 +21,6 @@ brew "tree"
 # apps
 cask "adobe-creative-cloud"
 cask "discord"
-cask "slack"
 cask "zoom"
 
 # quality of life
