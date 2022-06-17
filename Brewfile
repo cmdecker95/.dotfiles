@@ -21,6 +21,7 @@ brew "tree"
 # apps
 cask "adobe-creative-cloud"
 cask "discord"
+cask "google-chrome"
 cask "zoom"
 
 # quality of life
@@ -35,5 +36,5 @@ cask "font-hack-nerd-font"
 
 # development
 cask "iterm2"
-cask "jetbrains-toolbox"
 cask "miniforge"
+cask "visual-studio-code"

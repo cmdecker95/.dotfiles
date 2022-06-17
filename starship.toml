@@ -29,7 +29,8 @@ add_newline = false
 show_always = true
 style_user = "bg:#333333"
 style_root = "bg:#333333"
-format = '[$user ]($style)'
+# format = '[$user ]($style)'
+format = '[ ]($style)'
 
 [directory]
 style = "bg:#f44560"
