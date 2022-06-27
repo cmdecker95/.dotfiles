@@ -11,6 +11,7 @@ tap "homebrew/cask-fonts"
 # >>> CORE FORMULAE >>>
 
 brew "autojump"
+brew "awscli"
 brew "git"
 brew "node"
 brew "starship"
