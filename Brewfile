@@ -7,12 +7,14 @@ tap "homebrew/core"
 
 # custom taps
 tap "homebrew/cask-fonts"
+tap "heroku/brew"
 
 # >>> CORE FORMULAE >>>
 
 brew "autojump"
 brew "awscli"
 brew "git"
+brew "heroku"
 brew "node"
 brew "starship"
 brew "tree"
