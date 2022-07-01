@@ -16,6 +16,7 @@ brew "awscli"
 brew "git"
 brew "heroku"
 brew "node"
+brew "postgresql"
 brew "starship"
 brew "tree"
 
