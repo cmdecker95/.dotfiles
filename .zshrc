@@ -5,6 +5,10 @@ alias xx='conda deactivate'
 alias jn='jupyter notebook ~/Documents/Code'
 alias jl='jupyter lab ~/Documents/Code'
 
+# Environment variables
+export DATABASE_URL="postgresql:///postgres"
+export FLASK_ENV=development
+
 # Autojump
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 
