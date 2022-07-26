@@ -39,6 +39,8 @@ cask "font-fira-code-nerd-font"
 cask "font-hack-nerd-font"
 
 # development
+cask "docker"
 cask "iterm2"
 cask "miniforge"
+cask "postico"
 cask "visual-studio-code"
