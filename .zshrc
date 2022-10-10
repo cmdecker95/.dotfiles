@@ -14,9 +14,9 @@ export FLASK_ENV=development
 
 # Conda (installed as miniforge)
 if [ -f "/opt/homebrew/Caskroom/miniforge/base/etc/profile.d/conda.sh" ]; then
-    . "/opt/homebrew/Caskroom/miniforge/base/etc/profile.d/conda.sh"
+# . "/opt/homebrew/Caskroom/miniforge/base/etc/profile.d/conda.sh"  # commented out by conda initialize
 else
-    export PATH="/opt/homebrew/Caskroom/miniforge/base/bin:$PATH"
+# export PATH="/opt/homebrew/Caskroom/miniforge/base/bin:$PATH"  # commented out by conda initialize
 fi
 
 # Start in Starship Prompt

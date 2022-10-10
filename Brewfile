@@ -37,6 +37,7 @@ cask "vanilla"
 # fonts
 cask "font-fira-code-nerd-font"
 cask "font-hack-nerd-font"
+cask "font-monocraft"
 
 # development
 cask "docker"
