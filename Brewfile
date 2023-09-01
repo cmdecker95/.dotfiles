@@ -11,38 +11,30 @@ tap "heroku/brew"
 
 # >>> CORE FORMULAE >>>
 
-brew "autojump"
-brew "awscli"
 brew "git"
-brew "heroku"
 brew "node"
-brew "postgresql"
+brew "pnpm"
+brew "python"
 brew "starship"
-brew "tree"
+brew "yarn"
 
 # >>> CASK FORMULAE >>>
 
 # apps
-cask "adobe-creative-cloud"
-cask "discord"
+cask "firefox"
 cask "google-chrome"
 cask "spotify"
-cask "zoom"
 
 # quality of life
 cask "alfred"
-cask "mos"
 cask "rocket"
 cask "vanilla"
 
 # fonts
 cask "font-fira-code-nerd-font"
 cask "font-hack-nerd-font"
-cask "font-monocraft"
 
 # development
 cask "docker"
-cask "iterm2"
 cask "miniforge"
-cask "postico"
 cask "visual-studio-code"
