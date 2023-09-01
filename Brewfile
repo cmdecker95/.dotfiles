@@ -7,7 +7,6 @@ tap "homebrew/core"
 
 # custom taps
 tap "homebrew/cask-fonts"
-tap "heroku/brew"
 
 # >>> CORE FORMULAE >>>
 

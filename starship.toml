@@ -1,0 +1,38 @@
+# COLORS: find-and-replace from here
+# 1: #333333
+# 2: #555555
+# 3: #777777
+# 4: #999999
+# 5: #aaaaaa
+
+format = """
+$directory\
+$git_branch\
+$git_status\
+$nodejs\
+$time\
+"""
+
+# Disable the blank line at the start of the prompt
+add_newline = false
+
+[directory]
+format = "$path "
+truncation_length = 3
+truncation_symbol = "…/"
+
+[git_branch]
+symbol = ""
+format = "| $symbol $branch "
+
+[git_status]
+format = "$all_status$ahead_behind "
+
+[nodejs]
+symbol = ""
+format = "| $symbol ($version) "
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+format = "| $time % "
