@@ -19,11 +19,6 @@ brew "yarn"
 
 # >>> CASK FORMULAE >>>
 
-# apps
-cask "firefox"
-cask "google-chrome"
-cask "spotify"
-
 # quality of life
 cask "alfred"
 cask "rocket"
