@@ -13,6 +13,8 @@ Follow these steps to **automatically install all your applications** on a new M
 
 ## 1. Install the Apple CLT
 
+This can take several minutes sometimes, depending on your connection.
+
 ```Bash
 xcode-select --install
 ```
@@ -54,7 +56,6 @@ Host *
 
 ```Bash
 ssh-add -K ~/.ssh/id_ed25519
-
 ```
 
 #### Copy public SSH key to clipboard.
