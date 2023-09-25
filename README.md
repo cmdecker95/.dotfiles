@@ -91,7 +91,6 @@ rm ~/.gitconfig
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.zprofile ~/.zprofile
-ln -s ~/.dotfiles/starship.toml ~/.config/starship.toml
 ```
 
 ## 4. Install Homebrew
