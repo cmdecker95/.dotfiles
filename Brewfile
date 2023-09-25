@@ -10,25 +10,21 @@ tap "homebrew/cask-fonts"
 
 # >>> CORE FORMULAE >>>
 
+brew "bun"
 brew "git"
 brew "node"
-brew "pnpm"
 brew "python"
 brew "starship"
-brew "yarn"
 
 # >>> CASK FORMULAE >>>
 
-# quality of life
 cask "alfred"
-cask "rocket"
-cask "vanilla"
-
-# fonts
+cask "docker"
+cask "fig"
 cask "font-fira-code-nerd-font"
 cask "font-hack-nerd-font"
-
-# development
-cask "docker"
+cask "iterm2"
 cask "miniforge"
+cask "rocket"
+cask "vanilla"
 cask "visual-studio-code"
