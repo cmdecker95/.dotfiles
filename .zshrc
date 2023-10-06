@@ -27,3 +27,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # starship
 eval $(starship init zsh)
+
+# bun completions
+[ -s "/Users/christiandecker/.bun/_bun" ] && source "/Users/christiandecker/.bun/_bun"
