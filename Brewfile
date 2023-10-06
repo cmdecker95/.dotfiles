@@ -3,7 +3,6 @@
 # default taps
 tap "homebrew/bundle"
 tap "homebrew/cask"
-tap "homebrew/core"
 
 # custom taps
 tap "homebrew/cask-fonts"
