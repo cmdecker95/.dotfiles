@@ -9,7 +9,6 @@ tap "homebrew/cask-fonts"
 
 # >>> CORE FORMULAE >>>
 
-brew "bun"
 brew "git"
 brew "node"
 brew "python"
