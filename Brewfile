@@ -9,6 +9,7 @@ tap "homebrew/cask-fonts"
 
 # >>> CORE FORMULAE >>>
 
+brew "awscli"
 brew "git"
 brew "node"
 brew "python"
