@@ -1,7 +1,8 @@
 # aliases
 alias ll='ls -la'
 alias ga='git add'
-alias gc='git commit -m'
+alias gam='git add . && git commit -m'
+alias gm='git commit -m'
 alias gp='git push'
 
 # conda
