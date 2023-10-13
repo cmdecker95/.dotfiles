@@ -1,5 +1,6 @@
 # aliases
 alias ll='ls -la'
+alias del='rm -rf'
 alias ga='git add'
 alias gm='git commit -m'
 alias gam='git add . && git commit -m'
