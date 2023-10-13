@@ -35,3 +35,4 @@ eval $(starship init zsh)
 
 # bun completions
 [ -s "/Users/christiandecker/.bun/_bun" ] && source "/Users/christiandecker/.bun/_bun"
+export PATH="/usr/local/sbin:$PATH"
