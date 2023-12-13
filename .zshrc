@@ -1,14 +1,5 @@
 # aliases
 alias ll='ls -la'
-alias del='rm -rf'
-alias ga='git add'
-alias gm='git commit -m'
-alias gam='git add . && git commit -m'
-alias gp='git push'
-alias gs='git status'
-alias j1='cd ~/dev'
-alias j2='cd ~/.dotfiles'
-alias j3='cd ~/.config'
 
 # conda
 __conda_setup="$('/opt/homebrew/Caskroom/miniforge/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
