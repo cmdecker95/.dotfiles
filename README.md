@@ -50,9 +50,12 @@ git clone https://github.com/cmdecker95/.dotfiles.git ~/.dotfiles
 
 ```sh
 rm ~/.gitconfig
+rm ~/.zprofile
+rm ~/.zshrc
+
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
-ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.zprofile ~/.zprofile
+ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ```
 
 ## 4. Homebrew
