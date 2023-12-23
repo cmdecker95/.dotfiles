@@ -1,7 +1,17 @@
 # aliases
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gf='git fetch'
+alias gp='git push'
+alias gl='git pull'
+alias gm='git merge'
+
 alias ll='ls -la'
+
 alias python='python3'
 alias pip='pip3'
+
 alias ta='tmux a'
 alias tat='tmux a -t'
 alias tl='tmux ls'
