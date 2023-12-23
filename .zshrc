@@ -1,5 +1,11 @@
 # aliases
 alias ll='ls -la'
+alias python='python3'
+alias pip='pip3'
+alias ta='tmux a'
+alias tat='tmux a -t'
+alias tl='tmux ls'
+alias tnt='tmux new -t'
 
 # conda
 __conda_setup="$('/opt/homebrew/Caskroom/miniforge/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
