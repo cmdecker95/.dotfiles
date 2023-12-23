@@ -10,12 +10,13 @@ tap "homebrew/cask-fonts"
 # >>> CORE FORMULAE >>>
 
 brew "awscli"
+brew "bat"
+brew "exa"
 brew "git"
 brew "neovim"
 brew "node"
 brew "python"
 brew "starship"
-brew "tmux"
 
 # >>> CASK FORMULAE >>>
 
