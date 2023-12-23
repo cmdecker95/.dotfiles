@@ -1,114 +1,76 @@
-# New Mac? 👨🏽‍💻
+# `.dotfiles`
 
-Follow these steps to **automatically install all your applications** on a new Mac!
+## 1. Install the Apple Command Line Tools (CLT)
 
-> #### These steps assume that you have a `.dotfiles` repo on your own GitHub account.
->
-> If you don't already have one, **fork this repo**, and customize the settings to your liking!
-> I recommend that you create your own Brewfile by running `brew bundle dump`.
->
-> #### New to [Homebrew](https://brew.sh)?
->
-> It's a _package manager_ to neatly and efficiently install apps to MacOS (or Linux). No more "drag to install" prompts!
-
-## 1. Install the Apple CLT
-
-This can take several minutes sometimes, depending on your connection.
-
-```Bash
+```sh
 xcode-select --install
 ```
 
 ## 2. Connect to GitHub
 
-#### Generate SSH key
+### Generate SSH key
 
 - Press `Enter` when prompted for file name.
 - Enter passphrase for key.
 
-```Bash
-ssh-keygen -t ed25519 -C "your.email@here.com"
-```
-
-#### Start SSH Agent in the background.
-
-```Bash
-eval "$(ssh-agent -s)"
-```
-
-#### Create and open SSH config file.
-
-```Bash
-touch ~/.ssh/config
-open ~/.ssh/config
-```
-
-#### Paste this into the SSH config file:
-
-```Bash
+```sh
+ssh-keygen -t ed25519 -C "50999401+cmdecker95@users.noreply.github.com"
+ssh-agent -s
+cat <<EOL > ~/.ssh/config
 Host *
   AddKeysToAgent yes
   UseKeychain yes
   IdentityFile ~/.ssh/id_ed25519
-```
-
-#### Add SSH key to SSH Agent
-
-```Bash
+EOL
 ssh-add -K ~/.ssh/id_ed25519
-```
-
-#### Copy public SSH key to clipboard.
-
-```Bash
 pbcopy < ~/.ssh/id_ed25519.pub
 ```
 
-#### Paste SSH key in the "Key" field here:
+### Paste SSH key in the "Key" field here:
 
 - GitHub > Settings > SSH and GPG keys > New SSH key
 - Click "Add SSH key" and enter passphrase.
 
-## 3. Clone your Dotfiles
+## 3. Clone your `.dotfiles`
 
-#### Configure temporary Git globals
+### Configure Git globals
 
-```Bash
-git config --global user.name "Your Name"
-git config --global user.email "your.email@here.com"
+```sh
+git config --global user.name "Christian Decker"
+git config --global user.email "50999401+cmdecker95@users.noreply.github.com"
 ```
 
-#### Clone your repo
+### Clone your repo
 
-```Bash
-git clone git@github.com:<github_user>/.dotfiles.git
+```sh
+git clone https://github.com/cmdecker95/.dotfiles.git ~/.dotfiles
 ```
 
-#### Symlink resources from repo to user root
+### Symlink resources from repo to user root
 
-```Bash
+```sh
 rm ~/.gitconfig
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.zprofile ~/.zprofile
 ```
 
-## 4. Install Homebrew
+## 4. Homebrew
 
-#### Install Homebrew
+### Install Homebrew
 
-```Bash
+```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-#### Add Homebrew to PATH
+### Add Homebrew to PATH
 
-```Bash
+```sh
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
-#### Install everything
+### Install everything
 
-```Bash
+```sh
 brew bundle --file ~/.dotfiles/Brewfile
 ```
