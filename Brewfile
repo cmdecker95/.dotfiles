@@ -16,9 +16,11 @@ brew "git"
 brew "neovim"
 brew "node"
 brew "python"
+brew "ripgrep"
 brew "starship"
+brew "tmux"
 
-# >>> CASK FORMULAE >>>
+ >>> CASK FORMULAE >>>
 
 cask "1password"
 cask "alfred"
