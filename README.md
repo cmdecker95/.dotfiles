@@ -50,10 +50,12 @@ git clone https://github.com/cmdecker95/.dotfiles.git ~/.dotfiles
 
 ```sh
 rm ~/.gitconfig
+rm ~/.tmux.conf
 rm ~/.zprofile
 rm ~/.zshrc
 
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
 ln -s ~/.dotfiles/.zprofile ~/.zprofile
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ```
