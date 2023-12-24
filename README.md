@@ -77,3 +77,21 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 ```sh
 brew bundle --file ~/.dotfiles/Brewfile
 ```
+
+## 5. Install additional tools
+
+### TPM: tmux plugin manager
+
+Must be run before sourcing `.tmux.conf`
+
+```sh 
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+### NeoVim
+
+Clone personal NeoVim configuration.
+
+```sh
+git clone https://github.com/cmdecker95/nvim ~/.config/nvim
+```
