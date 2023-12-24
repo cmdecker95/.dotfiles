@@ -31,7 +31,7 @@ pbcopy < ~/.ssh/id_ed25519.pub
 - GitHub > Settings > SSH and GPG keys > New SSH key
 - Click "Add SSH key" and enter passphrase.
 
-## 3. Clone your `.dotfiles`
+## 3. Clone `.dotfiles`
 
 ### Configure Git globals (these are temporary)
 
@@ -40,7 +40,7 @@ git config --global user.name "Christian Decker"
 git config --global user.email "50999401+cmdecker95@users.noreply.github.com"
 ```
 
-### Clone your repo
+### Clone repo
 
 ```sh
 git clone https://github.com/cmdecker95/.dotfiles.git ~/.dotfiles
