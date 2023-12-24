@@ -33,7 +33,7 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
 ## 3. Clone your `.dotfiles`
 
-### Configure Git globals
+### Configure Git globals (these are temporary)
 
 ```sh
 git config --global user.name "Christian Decker"
