@@ -36,7 +36,3 @@ cask "rocket"
 cask "spotify"
 cask "vanilla"
 cask "visual-studio-code"
-
-# >>> MISC >>>
-brew "java11"   # Java 11 is stable
-brew "maven"    # Apache Maven
