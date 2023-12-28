@@ -6,6 +6,7 @@ alias gf='git fetch'
 alias gp='git push'
 alias gl='git pull'
 alias gm='git merge'
+alias gr='git restore'
 
 alias cat='bat'
 alias ls='exa'
