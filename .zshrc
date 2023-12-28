@@ -19,6 +19,7 @@ alias tl='tmux ls'
 alias ta='tmux a'
 alias tt='tmux a -t'
 alias tn='tmux new -s'
+alias td='tmux detach-client'
 
 # conda
 __conda_setup="$('/opt/homebrew/Caskroom/miniforge/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
