@@ -20,7 +20,7 @@ brew "ripgrep"
 brew "starship"
 brew "tmux"
 
- >>> CASK FORMULAE >>>
+# >>> CASK FORMULAE >>>
 
 cask "1password"
 cask "alfred"
