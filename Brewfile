@@ -18,7 +18,6 @@ brew "node"
 brew "python"
 brew "ripgrep"
 brew "starship"
-brew "tmux"
 
 # >>> CASK FORMULAE >>>
 
