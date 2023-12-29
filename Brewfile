@@ -1,35 +1,50 @@
 # >>> TAPS >>>
 
-# default taps
+# Defaults
 tap "homebrew/bundle"
 tap "homebrew/cask"
 
-# custom taps
+# Fonts
 tap "homebrew/cask-fonts"
 
 # >>> CORE FORMULAE >>>
 
+# Shell
 brew "bat"
 brew "exa"
 brew "git"
-brew "neovim"
+brew "starship"
+
+# Languages
 brew "node"
 brew "python"
+
+# Neovim
+brew "fd"
+brew "lazygit"
 brew "ripgrep"
-brew "starship"
+brew "tree-sitter"
+brew "neovim"
 
 # >>> CASK FORMULAE >>>
 
-cask "1password"
-cask "alfred"
+# Apps
 cask "discord"
-cask "docker"
+cask "google-chrome"
+cask "spotify"
+
+# Fonts
 cask "font-fira-code-nerd-font"
 cask "font-geist-mono-nerd-font"
 cask "font-hack-nerd-font"
-cask "google-chrome"
+
+# Programming
+cask "docker"
 cask "iterm2"
-cask "rocket"
-cask "spotify"
-cask "vanilla"
 cask "visual-studio-code"
+
+# Utils
+cask "1password"
+cask "alfred"
+cask "rocket"
+cask "vanilla"
