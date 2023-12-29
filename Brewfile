@@ -12,6 +12,7 @@ tap "homebrew/cask-fonts"
 # Shell
 brew "bat"
 brew "exa"
+brew "gh"
 brew "git"
 brew "starship"
 
