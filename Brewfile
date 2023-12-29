@@ -9,7 +9,6 @@ tap "homebrew/cask-fonts"
 
 # >>> CORE FORMULAE >>>
 
-brew "awscli"
 brew "bat"
 brew "exa"
 brew "git"
@@ -25,7 +24,6 @@ cask "1password"
 cask "alfred"
 cask "discord"
 cask "docker"
-cask "font-0xproto-nerd-font"
 cask "font-fira-code-nerd-font"
 cask "font-geist-mono-nerd-font"
 cask "font-hack-nerd-font"
