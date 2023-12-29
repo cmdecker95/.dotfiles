@@ -2,7 +2,6 @@
 
 # Defaults
 tap "homebrew/bundle"
-tap "homebrew/cask"
 
 # Fonts
 tap "homebrew/cask-fonts"
