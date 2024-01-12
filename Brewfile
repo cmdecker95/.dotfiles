@@ -21,6 +21,7 @@ brew "python"
 
 # Neovim
 brew "fd"
+brew "gnu-sed"
 brew "lazygit"
 brew "ripgrep"
 brew "tree-sitter"
