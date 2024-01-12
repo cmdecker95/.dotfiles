@@ -33,4 +33,4 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 
 # Starship
-eval $(starship init zsh)
+eval "$(starship init zsh)"
