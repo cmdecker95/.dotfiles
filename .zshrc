@@ -1,4 +1,4 @@
-# aliases
+# Git Aliases
 alias gs='git status'
 alias ga='git add'
 alias gc='git commit'
@@ -8,37 +8,29 @@ alias gl='git pull'
 alias gm='git merge'
 alias gr='git restore'
 
+# Linus Aliases
 alias cat='bat'
 alias ls='exa'
 alias ll='exa -la'
 
+# Python Aliases
 alias python='python3'
 alias pip='pip3'
 
-# conda
-__conda_setup="$('/opt/homebrew/Caskroom/miniforge/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/opt/homebrew/Caskroom/miniforge/base/etc/profile.d/conda.sh" ]; then
-        . "/opt/homebrew/Caskroom/miniforge/base/etc/profile.d/conda.sh"
-    else
-        export PATH="/opt/homebrew/Caskroom/miniforge/base/bin:$PATH"
-    fi
-fi
-unset __conda_setup
+# Docker Aliases
+alias undock='docker ps -qa | xargs docker rm -f'
 
+# Neovim Aliases
+alias nv='nvim .'
+alias nvcd='cd ~/.config/nvim/'
+alias nvrm='rm -rf ~/.config/nvim/ ~/.local/share/nvim/ ~/.local/state/nvim/'
 
-# bun completions
+# Bun
 [ -s "/Users/christian/.bun/_bun" ] && source "/Users/christian/.bun/_bun"
-
-# bun
+[ -s "/Users/christiandecker/.bun/_bun" ] && source "/Users/christiandecker/.bun/_bun"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-
-# starship
-eval $(starship init zsh)
-
-# bun completions
-[ -s "/Users/christiandecker/.bun/_bun" ] && source "/Users/christiandecker/.bun/_bun"
 export PATH="/usr/local/sbin:$PATH"
+
+# Starship
+eval $(starship init zsh)
