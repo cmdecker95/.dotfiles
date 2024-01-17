@@ -8,7 +8,7 @@ alias gl='git pull'
 alias gm='git merge'
 alias gr='git restore'
 
-# Linus Aliases
+# Linux Aliases
 alias cat='bat'
 alias ls='exa'
 alias ll='exa -la'
