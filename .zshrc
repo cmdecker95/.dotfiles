@@ -12,6 +12,7 @@ alias gr='git restore'
 alias cat='bat'
 alias ls='exa'
 alias ll='exa -la'
+alias ff='fzf'
 
 # Python Aliases
 alias python='python3'
