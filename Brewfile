@@ -15,6 +15,7 @@ brew "fzf"
 brew "gh"
 brew "git"
 brew "starship"
+brew "tmux"
 
 # Languages
 brew "node"
