@@ -1,12 +1,15 @@
 # Git Aliases
+alias gl='git log'
 alias gs='git status'
 alias ga='git add'
 alias gc='git commit'
+alias gcm='git commit -m'
 alias gf='git fetch'
-alias gp='git push'
-alias gl='git pull'
+alias gP='git push'
+alias gp='git pull'
 alias gm='git merge'
 alias gr='git restore'
+alias gR='git reset'
 
 # Linux Aliases
 alias cat='bat'
