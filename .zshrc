@@ -17,6 +17,12 @@ alias ls='exa'
 alias ll='exa -la'
 alias ff='fzf'
 
+# TMUX Aliases
+alias tl='tmux ls'
+alias ta='tmux a'
+alias tt='tmux a -t'
+alias tn='tmux new -s'
+
 # Python Aliases
 alias python='python3'
 alias pip='pip3'
