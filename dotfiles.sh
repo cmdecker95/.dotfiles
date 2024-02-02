@@ -6,10 +6,8 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 brew bundle --file ~/.dotfiles/Brewfile
 
 # Shell
-rm ~/.aliases
 rm ~/.zprofile
 rm ~/.zshrc
-ln -s ~/.dotfiles/.aliases ~/.aliases
 ln -s ~/.dotfiles/.zprofile ~/.zprofile
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 source ~/.zshrc

@@ -1,6 +1,5 @@
 echo "Configuring dotfiles..."
 
-cp ./.aliases ~/.aliases
 cp ./.bashrc ~/.bashrc
 source ~/.bashrc
 
