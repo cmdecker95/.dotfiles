@@ -24,8 +24,7 @@ rm -rf ~/.local/state/nvim/
 git clone https://github.com/cmdecker95/nvim ~/.config/nvim
 
 # qmk
-qmk setup cmdecker95/qmk_firmware -y
-qmk config user.keyboard=planck/rev7
-qmk config user.keymap=cmdecker95
+qmk setup -y
+qmk flash keymap.json
 
 echo "Successfully configured dotfiles!"
