@@ -16,6 +16,7 @@ alias cat='bat'
 alias ls='exa'
 alias ll='exa -la'
 alias ff='fzf'
+alias mk='() {mkdir -p $1 && cd $1}'
 
 # TMUX Aliases
 alias tl='tmux ls'
