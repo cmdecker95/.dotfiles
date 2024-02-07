@@ -13,7 +13,7 @@ alias gR='git reset'
 
 # Linux Aliases
 alias ll='ls -la'
-alias mk='() {mkdir -p $1 && cd $1}'
+alias mk='function _mk(){ mkdir "$1" && cd "$1"; };_mk'
 
 # TMUX Aliases
 alias tl='tmux ls'
