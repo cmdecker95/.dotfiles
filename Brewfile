@@ -32,8 +32,8 @@ brew "neovim"
 # >>> CASK FORMULAE >>>
 
 # Apps
+cask "arc"
 cask "discord"
-cask "google-chrome"
 cask "spotify"
 
 # Fonts
