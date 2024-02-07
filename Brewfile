@@ -49,5 +49,4 @@ cask "visual-studio-code"
 # Utils
 cask "1password"
 cask "alfred"
-cask "rocket"
 cask "vanilla"
