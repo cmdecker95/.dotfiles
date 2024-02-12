@@ -14,6 +14,7 @@ brew "exa"
 brew "fzf"
 brew "gh"
 brew "git"
+brew "jq"
 brew "starship"
 brew "tmux"
 
