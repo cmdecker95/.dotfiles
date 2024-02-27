@@ -13,7 +13,7 @@ alias gR='git reset'
 
 # Linux Aliases
 alias cat='bat'
-alias cd='zoxide'
+alias cd='z'
 alias ls='exa'
 alias ll='exa -la'
 alias ff='fzf'
