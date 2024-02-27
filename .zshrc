@@ -43,3 +43,6 @@ export PATH="/usr/local/sbin:$PATH"
 
 # Starship
 eval "$(starship init zsh)"
+
+# Zoxide
+eval "$(zoxide init zsh)"

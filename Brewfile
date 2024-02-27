@@ -17,6 +17,7 @@ brew "git"
 brew "jq"
 brew "starship"
 brew "tmux"
+brew "zoxide"
 
 # Languages
 brew "node"
