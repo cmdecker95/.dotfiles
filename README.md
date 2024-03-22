@@ -3,6 +3,7 @@
 Dotfiles are files and folders on Unix-like systems starting with `.` that control the configuration of applications and shells on your system.
 
 The dotfiles here include my personal:
+
 - aliases
 - shell config
 - tmux config
@@ -17,6 +18,7 @@ There are two intended usage scenarios:
 2. **Personal Mac.** I run `dotfiles.sh` to clone and source my dotfiles on my Mac, whether to bootstrap a new one or get a fresh start on an old one.
 
 > Prerequisites (instructions below)
+>
 > 1. Install Apple CLT
 > 2. Connect to GitHub
 > 3. Clone dotfiles repo
@@ -51,10 +53,10 @@ pbcopy < ~/.ssh/id_ed25519.pub
 
 #### 2b. Add SSH key to GitHub settings
 
-- GitHub > Settings > SSH and GPG keys > New SSH key
-- Click "Add SSH key" and enter passphrase.
+- **GitHub** > **Settings** > **SSH and GPG keys** > **New SSH key**
+- Click **Add SSH key** and enter passphrase.
 
-### 3. Clone dotfiles repo
+### 3. Clone `dotfiles` repo
 
 #### 3a. Create temporary git settings
 
@@ -67,4 +69,30 @@ git config --global user.email "50999401+cmdecker95@users.noreply.github.com"
 
 ```sh
 git clone https://github.com/cmdecker95/.dotfiles.git ~/.dotfiles
+```
+
+### 4. Install apps
+
+```sh
+brew bundle --file ~/.dotfiles/Brewfile install
+```
+
+### 5. Sync dotfiles
+
+```sh
+mkdir -p ~/.config
+
+rm -rf ~/.config/.tmux.conf
+rm -rf ~/.zprofile
+rm -rf ~/.zshrc
+
+ln -s ~/.dotfiles/.tmux.conf ~/.config/.tmux.conf
+ln -s ~/.dotfiles/.zprofile ~/.zprofile
+ln -s ~/.dotfiles/.zshrc ~/.zshrc
+```
+
+### 6. Download Neovim configuration
+
+```sh
+git clone https://github.com/cmdecker95/nvim.git ~/.config/nvim/
 ```
