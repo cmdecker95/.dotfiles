@@ -33,7 +33,7 @@ brew "neovim"
 # >>> CASK FORMULAE >>>
 
 # Apps
-cask "discord"
+cask "google-chrome"
 cask "spotify"
 
 # Fonts
