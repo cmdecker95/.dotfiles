@@ -10,7 +10,6 @@ tap "homebrew/cask-fonts"
 
 # Shell
 brew "bat"
-brew "exa"
 brew "fzf"
 brew "gh"
 brew "git"
