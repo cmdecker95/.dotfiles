@@ -18,12 +18,6 @@ alias ll='ls -la'
 alias ff='fzf'
 alias mk='function _mk(){ mkdir "$1" && cd "$1"; };_mk'
 
-# TMUX Aliases
-alias tl='tmux ls'
-alias ta='tmux a'
-alias tt='tmux a -t'
-alias tn='tmux new -s'
-
 # Python Aliases
 alias python='python3'
 alias pip='pip3'

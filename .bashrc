@@ -15,11 +15,5 @@ alias gR='git reset'
 alias ll='ls -la'
 alias mk='function _mk(){ mkdir "$1" && cd "$1"; };_mk'
 
-# TMUX Aliases
-alias tl='tmux ls'
-alias ta='tmux a'
-alias tt='tmux a -t'
-alias tn='tmux new -s'
-
 # Docker Aliases
 alias dockerclear='docker ps -qa | xargs docker rm -f'

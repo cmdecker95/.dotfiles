@@ -15,7 +15,6 @@ brew "gh"
 brew "git"
 brew "jq"
 brew "starship"
-brew "tmux"
 brew "zoxide"
 
 # Languages

@@ -6,7 +6,6 @@ The dotfiles here include my personal:
 
 - aliases
 - shell config
-- tmux config
 - Brewfile
 
 ## Usage
@@ -82,11 +81,9 @@ brew bundle --file ~/.dotfiles/Brewfile install
 ```sh
 mkdir -p ~/.config
 
-rm -rf ~/.config/.tmux.conf
 rm -rf ~/.zprofile
 rm -rf ~/.zshrc
 
-ln -s ~/.dotfiles/.tmux.conf ~/.config/.tmux.conf
 ln -s ~/.dotfiles/.zprofile ~/.zprofile
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ```
