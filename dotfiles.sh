@@ -13,8 +13,4 @@ source ~/.zshrc
 # git
 rm ~/.gitconfig && ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 
-# qmk
-qmk setup -y
-qmk flash keymap.json
-
 echo "Successfully configured dotfiles!"
