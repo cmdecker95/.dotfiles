@@ -17,12 +17,6 @@ rm ~/.gitconfig && ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 rm ~/.tmux.conf && ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
 
-# nvim
-rm -rf ~/.config/nvim/
-rm -rf ~/.local/share/nvim/
-rm -rf ~/.local/state/nvim/
-git clone https://github.com/cmdecker95/nvim ~/.config/nvim
-
 # qmk
 qmk setup -y
 qmk flash keymap.json

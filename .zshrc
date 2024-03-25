@@ -31,9 +31,6 @@ alias pip='pip3'
 # Docker Aliases
 alias dockerclear='docker ps -qa | xargs docker rm -f'
 
-# Neovim Aliases
-alias nvimclear='rm -rf ~/.config/nvim/ ~/.local/share/nvim/ ~/.local/state/nvim/'
-
 # Bun
 [ -s "/Users/christian/.bun/_bun" ] && source "/Users/christian/.bun/_bun"
 [ -s "/Users/christiandecker/.bun/_bun" ] && source "/Users/christiandecker/.bun/_bun"

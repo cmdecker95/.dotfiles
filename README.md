@@ -90,9 +90,3 @@ ln -s ~/.dotfiles/.tmux.conf ~/.config/.tmux.conf
 ln -s ~/.dotfiles/.zprofile ~/.zprofile
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ```
-
-### 6. Download Neovim configuration
-
-```sh
-git clone https://github.com/cmdecker95/nvim.git ~/.config/nvim/
-```

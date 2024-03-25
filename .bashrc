@@ -23,6 +23,3 @@ alias tn='tmux new -s'
 
 # Docker Aliases
 alias dockerclear='docker ps -qa | xargs docker rm -f'
-
-# Neovim Aliases
-alias nvimclear='rm -rf ~/.config/nvim/ ~/.local/share/nvim/ ~/.local/state/nvim/'
