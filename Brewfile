@@ -14,6 +14,7 @@ brew "fzf"
 brew "gh"
 brew "git"
 brew "jq"
+brew "lazygit"
 brew "starship"
 brew "zoxide"
 
