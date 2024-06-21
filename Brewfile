@@ -10,6 +10,7 @@ tap "homebrew/cask-fonts"
 
 # Shell
 brew "bat"
+brew "fd"
 brew "fzf"
 brew "gh"
 brew "git"
@@ -30,6 +31,7 @@ cask "google-chrome"
 cask "spotify"
 
 # Fonts
+cask "font-0xproto-nerd-font"
 cask "font-fira-code-nerd-font"
 cask "font-geist-mono-nerd-font"
 cask "font-hack-nerd-font"
