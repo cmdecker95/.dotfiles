@@ -16,7 +16,7 @@ alias gR='git reset'
 alias cat='bat'
 alias cd='z'
 alias ls='ls --color=auto'
-alias ll='ls -la'
+alias ll='ls -laF'
 alias ff='fzf'
 alias mk='function _mk(){ mkdir "$1" && cd "$1"; };_mk'
 
