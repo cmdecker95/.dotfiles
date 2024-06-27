@@ -24,6 +24,12 @@ alias mk='function _mk(){ mkdir "$1" && cd "$1"; };_mk'
 alias python='python3'
 alias pip='pip3'
 
+# Tmux Aliases
+alias tm='tmux'
+alias tn='tmux new -s'
+alias ta='tmux a'
+alias tt='tmux a -t'
+
 # Docker Aliases
 alias dockerclear='docker ps -qa | xargs docker rm -f'
 
