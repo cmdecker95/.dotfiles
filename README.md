@@ -79,11 +79,19 @@ brew bundle --file ~/.dotfiles/Brewfile install
 ### 5. Sync dotfiles
 
 ```sh
-mkdir -p ~/.config
 
+# Sync tmux
+rm -rf ~/.tmux.conf
+ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
+
+# Sync starship
+rm -rf ~/.config/starship.toml
+mkdir -p ~/.config
+ln -s ~/.dotfiles/starship.toml ~/.config/starship.toml
+
+# Sync zsh
 rm -rf ~/.zprofile
 rm -rf ~/.zshrc
-
 ln -s ~/.dotfiles/.zprofile ~/.zprofile
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ```
