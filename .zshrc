@@ -29,6 +29,7 @@ alias tm='tmux'
 alias tn='tmux new -s'
 alias ta='tmux a'
 alias tt='tmux a -t'
+alias tl='tmux ls'
 
 # Docker Aliases
 alias dockerclear='docker ps -qa | xargs docker rm -f'
