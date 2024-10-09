@@ -33,6 +33,8 @@ alias tl='tmux ls'
 
 # Docker Aliases
 alias dockerclear='docker ps -qa | xargs docker rm -f'
+alias dockerprune='docker network prune -f && docker volume prune -f'
+alias dc='docker compose'
 
 # Bun
 [ -s "/Users/christian/.bun/_bun" ] && source "/Users/christian/.bun/_bun"
@@ -40,6 +42,9 @@ alias dockerclear='docker ps -qa | xargs docker rm -f'
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
+
+# Bun Aliases
+alias bd='bun dev -- --open'
 
 # Starship
 eval "$(starship init zsh)"
