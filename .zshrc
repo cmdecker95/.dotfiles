@@ -34,7 +34,7 @@ alias tl='tmux ls'
 # Docker Aliases
 alias dockerclear='docker ps -qa | xargs docker rm -f'
 alias dockerprune='docker network prune -f && docker volume prune -f'
-alias dc='docker compose'
+alias com='docker compose'
 
 # Bun
 [ -s "/Users/christian/.bun/_bun" ] && source "/Users/christian/.bun/_bun"
