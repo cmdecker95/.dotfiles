@@ -15,7 +15,6 @@ brew "docker"
 brew "fd"
 brew "fzf"
 brew "gh"
-brew "ghostty"
 brew "git"
 brew "httpie"
 brew "jq"
@@ -33,6 +32,7 @@ brew "python"
 
 # Apps
 cask "brave-browser"
+cask "ghostty"
 cask "spotify"
 cask "visual-studio-code"
 
