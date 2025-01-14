@@ -57,3 +57,7 @@ eval "$(zoxide init zsh)"
 
 # fzf
 source <(fzf --zsh)
+
+# Colima
+export DOCKER_HOST=unix:///$HOME/.colima/docker.sock
+
