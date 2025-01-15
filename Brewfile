@@ -22,7 +22,6 @@ brew "lazygit"
 brew "starship"
 brew "zoxide"
 brew "zsh-syntax-highlighting"
-brew "zsh-autosuggestions"
 
 # Languages
 brew "node"
