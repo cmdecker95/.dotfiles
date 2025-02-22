@@ -31,7 +31,6 @@ brew "python"
 
 # Apps
 cask "brave-browser"
-cask "ghostty"
 cask "spotify"
 cask "visual-studio-code"
 
