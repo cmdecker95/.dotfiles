@@ -31,6 +31,7 @@ brew "python"
 
 # Apps
 cask "brave-browser"
+cask "iterm2"
 cask "spotify"
 cask "visual-studio-code"
 
