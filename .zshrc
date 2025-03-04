@@ -32,12 +32,7 @@ alias tt='tmux a -t'
 alias tl='tmux ls'
 
 # Docker Aliases
-alias dockerclear='docker ps -qa | xargs docker rm -f'
-alias dockerprune='docker network prune -f && docker volume prune -f'
-alias dok='docker'
-alias dom='docker compose'
-alias dup='docker compose up -d --build'
-alias down='docker compose down'
+alias ld='lazydocker'
 
 # Bun
 [ -s "/Users/christian/.bun/_bun" ] && source "/Users/christian/.bun/_bun"
@@ -59,7 +54,7 @@ eval "$(zoxide init zsh)"
 source <(fzf --zsh)
 
 # Colima
-export DOCKER_HOST=unix:///$HOME/.colima/docker.sock
+export DOCKER_HOST=unix://$HOME/.colima/default/docker.sock
 
 # Activate syntax highlighting
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
