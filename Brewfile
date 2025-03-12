@@ -24,6 +24,7 @@ brew "zoxide"
 brew "zsh-syntax-highlighting"
 
 # Languages
+brew "go"
 brew "node"
 brew "openjdk"
 brew "python"
