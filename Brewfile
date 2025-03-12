@@ -25,6 +25,7 @@ brew "zsh-syntax-highlighting"
 
 # Languages
 brew "node"
+brew "openjdk"
 brew "python"
 
 # >>> CASK FORMULAE >>>
