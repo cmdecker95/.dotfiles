@@ -15,7 +15,7 @@ alias gg='lazygit'
 # Linux Aliases
 alias cat='bat'
 alias cd='z'
-alias ll='ls -la'
+alias ll='ls -la --color=auto'
 alias ff='fzf'
 alias mk='function _mk(){ mkdir "$1" && cd "$1"; };_mk'
 
