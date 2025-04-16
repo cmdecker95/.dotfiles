@@ -10,6 +10,7 @@ alias gp='git pull'
 alias gm='git merge'
 alias gr='git restore'
 alias gR='git reset'
+alias gg='lazygit'
 
 # Linux Aliases
 alias cat='bat'
@@ -30,6 +31,10 @@ alias pip='pip3'
 
 # Docker Aliases
 alias dockerclear='docker ps -qa | xargs docker rm -f'
+
+# Other
+alias bd='bun dev --open'
+alias ntl='netlify'
 
 # Bun
 [ -s "/Users/christian/.bun/_bun" ] && source "/Users/christian/.bun/_bun"
