@@ -17,8 +17,4 @@ rm ~/.gitconfig && ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 rm ~/.tmux.conf && ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
 
-# qmk
-qmk setup -y
-qmk flash keymap.json
-
 echo "Successfully configured dotfiles!"
