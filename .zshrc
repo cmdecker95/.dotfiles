@@ -19,6 +19,7 @@ alias ls='ls --color=auto'
 alias ll='ls -laF'
 alias ff='fzf'
 alias mk='function _mk(){ mkdir "$1" && cd "$1"; };_mk'
+alias rmds='find ~/Desktop/ -name ".DS_Store" -type f -delete && find ~/Documents/ -name ".DS_Store" -type f -delete && find ~/Downloads/ -name ".DS_Store" -type f -delete && find ~/Movies/ -name ".DS_Store" -type f -delete && find ~/Music/ -name ".DS_Store" -type f -delete && find ~/Pictures/ -name ".DS_Store" -type f -delete && find ~/Public/ -name ".DS_Store" -type f -delete &&  find ~/dev/ -name ".DS_Store" -type f -delete'
 
 # Python Aliases
 alias python='python3'
