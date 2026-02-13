@@ -83,8 +83,3 @@ esac
 
 # opencode
 export EDITOR=nvim
-
-# Claude Code (using Ollama)
-export ANTHROPIC_API_KEY="" # unset
-export ANTHROPIC_AUTH_TOKEN=ollama
-export ANTROPIC_BASE_URL=http://localhost:11434
