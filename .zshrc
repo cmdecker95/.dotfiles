@@ -83,3 +83,6 @@ esac
 
 # opencode
 export EDITOR=nvim
+
+# rapidfort CLI
+export PATH="$PATH:/Users/christiandecker/.rapidfort"
