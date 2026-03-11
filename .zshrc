@@ -59,9 +59,6 @@ eval "$(zoxide init zsh)"
 # fzf
 source <(fzf --zsh)
 
-# Colima
-export DOCKER_HOST=unix:///$HOME/.colima/docker.sock
-
 # Activate syntax highlighting
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
