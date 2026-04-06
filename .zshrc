@@ -83,3 +83,12 @@ export EDITOR=nvim
 
 # rapidfort CLI
 export PATH="$PATH:/Users/christiandecker/.rapidfort"
+
+# Block utm installation
+brew() {
+  if [[ "$1" == "install" && "$2" == "utm" ]]; then
+    echo "Error: utm is not allowed to be installed"
+    return 1
+  fi
+  command brew "$@"
+}
