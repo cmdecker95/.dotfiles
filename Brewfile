@@ -10,7 +10,6 @@ tap "homebrew/cask-fonts"
 
 # Shell
 brew "bat"
-brew "colima"
 brew "docker"
 brew "fd"
 brew "fzf"
@@ -31,7 +30,7 @@ brew "python"
 # >>> CASK FORMULAE >>>
 
 # Apps
-cask "brave-browser"
+cask "google-chrome"
 cask "iterm2"
 cask "spotify"
 cask "visual-studio-code"
@@ -44,5 +43,5 @@ cask "font-hack-nerd-font"
 
 # Utils
 cask "1password"
-cask "alfred"
+cask "raycast"
 cask "vanilla"
