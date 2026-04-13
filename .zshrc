@@ -31,6 +31,9 @@ alias tn='tmux new -s'
 alias ta='tmux a'
 alias tt='tmux a -t'
 alias tl='tmux ls'
+bindkey -M viins '^P' up-history
+bindkey -M viins '^N' down-history
+bindkey -M viins '^R' history-incremental-search-backward
 
 # Docker Aliases
 alias dockerclear='docker ps -qa | xargs docker rm -f'
