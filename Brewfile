@@ -1,4 +1,5 @@
 # >>> TAPS >>>
+tap "anomalyco/tap" # opencode
 
 # >>> CORE FORMULAE >>>
 
@@ -12,6 +13,7 @@ brew "git"
 brew "httpie"
 brew "jq"
 brew "lazygit"
+brew "opencode"
 brew "starship"
 brew "tmux"
 brew "zoxide"
