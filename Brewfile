@@ -1,11 +1,5 @@
 # >>> TAPS >>>
 
-# Defaults
-tap "homebrew/bundle"
-
-# Fonts
-tap "homebrew/cask-fonts"
-
 # >>> CORE FORMULAE >>>
 
 # Shell
