@@ -26,7 +26,7 @@ brew "python"
 # >>> CASK FORMULAE >>>
 
 # Apps
-cask "google-chrome"
+cask "brave-browser"
 cask "iterm2"
 cask "spotify"
 cask "visual-studio-code"
