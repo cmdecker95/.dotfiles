@@ -22,6 +22,8 @@ brew "zsh-syntax-highlighting"
 # Languages
 brew "node"
 brew "python"
+# brew "go"
+# cask "temurin@25" # Java
 
 # >>> CASK FORMULAE >>>
 
