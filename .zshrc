@@ -98,3 +98,6 @@ brew() {
 
 # Java
 export JAVA_HOME=$(/usr/libexec/java_home)
+
+# Binaries installed by Go (namely bootdev from Boot.dev)
+export PATH="/Users/christiandecker/go/bin:$PATH"
