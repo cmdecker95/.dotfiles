@@ -4,7 +4,6 @@ tap "anomalyco/tap" # opencode
 # >>> CORE FORMULAE >>>
 
 # Shell
-brew "bat"
 brew "docker"
 brew "fd"
 brew "fzf"

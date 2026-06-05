@@ -13,7 +13,6 @@ alias gr='git restore'
 alias gR='git reset'
 
 # Linux Aliases
-alias cat='bat'
 alias cd='z'
 alias ls='ls --color=auto'
 alias ll='ls -laF'
