@@ -1,5 +1,5 @@
 # Git Aliases
-alias gl='git log'
+alias gl='git log --oneline -n 5'
 alias gs='git status'
 alias ga='git add'
 alias gc='git commit'
