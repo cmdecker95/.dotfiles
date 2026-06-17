@@ -1,16 +1,17 @@
 # Git Aliases
-alias gl='git log --oneline -n 5'
+alias gl='git log --oneline -n 10'
 alias gs='git status'
 alias ga='git add'
 alias gc='git commit'
 alias gcm='git commit -m'
-alias gf='git fetch --prune'
+alias gf='git fetch --prune --all'
 alias gg='lazygit'
 alias gP='git push'
 alias gp='git pull'
 alias gm='git merge'
 alias gr='git restore'
 alias gR='git reset'
+alias gw='git switch'
 
 # Linux Aliases
 alias cd='z'
