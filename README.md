@@ -1,8 +1,6 @@
 # `.dotfiles`
 
-Dotfiles are files and folders on Unix-like systems starting with `.` that control the configuration of applications and shells on your system.
-
-The dotfiles here include my personal:
+My dotfiles include:
 
 - aliases
 - shell config
@@ -11,11 +9,7 @@ The dotfiles here include my personal:
 
 ## Usage
 
-There are two intended usage scenarios:
-
-1. **GitHub Codespaces.** Any new Codespace that I start runs `setup.sh` on initialization, which just copies my `.bashrc` into the dev container. Other terminal-based configurations are skipped, since Codespace workflows are centered on VS Code.
-
-2. **Personal Mac.** I run `dotfiles.sh` to clone and source my dotfiles on my Mac, whether to bootstrap a new one or get a fresh start on an old one.
+Run `dotfiles.sh` to clone and source these on a Mac, whether to bootstrap a new one or get a fresh start on an old one.
 
 > Prerequisites (instructions below)
 >
@@ -23,7 +17,7 @@ There are two intended usage scenarios:
 > 2. Connect to GitHub
 > 3. Clone dotfiles repo
 
-## Prerequisites for using on a personal Mac
+## Prerequisites
 
 ### 1. Install the Apple Command Line Tools (CLT)
 
@@ -42,12 +36,12 @@ xcode-select --install
 ssh-keygen -t ed25519 -C "50999401+cmdecker95@users.noreply.github.com"
 ssh-agent -s
 cat <<EOL > ~/.ssh/config
-Host *
+Host github.com
   AddKeysToAgent yes
   UseKeychain yes
   IdentityFile ~/.ssh/id_ed25519
 EOL
-ssh-add -K ~/.ssh/id_ed25519
+ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 pbcopy < ~/.ssh/id_ed25519.pub
 ```
 
@@ -68,31 +62,11 @@ git config --global user.email "50999401+cmdecker95@users.noreply.github.com"
 #### 3b. Clone repo
 
 ```sh
-git clone https://github.com/cmdecker95/.dotfiles.git ~/.dotfiles
+git clone git@github.com:cmdecker95/.dotfiles.git ~/.dotfiles
 ```
 
-### 4. Install apps
+### 4. Install
 
 ```sh
-brew bundle --file ~/.dotfiles/Brewfile install
-```
-
-### 5. Sync dotfiles
-
-```sh
-
-# Sync tmux
-rm -rf ~/.tmux.conf
-ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
-
-# Sync starship
-rm -rf ~/.config/starship.toml
-mkdir -p ~/.config
-ln -s ~/.dotfiles/starship.toml ~/.config/starship.toml
-
-# Sync zsh
-rm -rf ~/.zprofile
-rm -rf ~/.zshrc
-ln -s ~/.dotfiles/.zprofile ~/.zprofile
-ln -s ~/.dotfiles/.zshrc ~/.zshrc
+~/.dotfiles/dotfiles.sh
 ```
