@@ -10,7 +10,6 @@ alias gP='git push'
 alias gp='git pull'
 alias gm='git merge'
 alias gr='git restore'
-alias gR='git reset'
 alias gw='git switch'
 
 # Linux Aliases
@@ -36,8 +35,6 @@ bindkey -M viins '^N' down-history
 bindkey -M viins '^R' history-incremental-search-backward
 
 # Docker Aliases
-alias dockerclear='docker ps -qa | xargs docker rm -f'
-alias dockerprune='docker network prune -f && docker volume prune -f'
 alias dok='docker'
 alias dom='docker compose'
 alias dup='docker compose up -d --build'
