@@ -1,20 +1,21 @@
+#!/bin/zsh
 echo "Configuring dotfiles..."
 
-# Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+if ! command -v brew >/dev/null; then
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
 eval "$(/opt/homebrew/bin/brew shellenv)"
-brew bundle --file ~/.dotfiles/Brewfile
+brew bundle --file "$HOME/.dotfiles/Brewfile"
 
-# zsh
-rm ~/.zprofile && ln -s ~/.dotfiles/.zprofile ~/.zprofile
-rm ~/.zshrc && ln -s ~/.dotfiles/.zshrc ~/.zshrc
-source ~/.zshrc
+ln -sfn "$HOME/.dotfiles/.zprofile" "$HOME/.zprofile"
+ln -sfn "$HOME/.dotfiles/.zshrc" "$HOME/.zshrc"
+ln -sfn "$HOME/.dotfiles/.tmux.conf" "$HOME/.tmux.conf"
 
-# git
-rm ~/.gitconfig && ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+mkdir -p "$HOME/.config"
+ln -sfn "$HOME/.dotfiles/starship.toml" "$HOME/.config/starship.toml"
 
-# tmux
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-rm ~/.tmux.conf && ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
+if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
+  git clone https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tpm"
+fi
 
 echo "Successfully configured dotfiles!"
