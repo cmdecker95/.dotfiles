@@ -18,4 +18,9 @@ if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
   git clone https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tpm"
 fi
 
+# rice up nvim
+if [ ! -d "$HOME/.config/nvim" ]; then
+  git clone git@github.com:cmdecker95/nvim.git "$HOME/.config/nvim"
+fi
+
 echo "Successfully configured dotfiles!"
