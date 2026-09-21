@@ -1,6 +1,3 @@
-# >>> TAPS >>>
-tap "anomalyco/tap" # opencode
-
 # >>> CORE FORMULAE >>>
 
 # Shell
@@ -12,9 +9,9 @@ brew "git"
 brew "httpie"
 brew "jq"
 brew "lazygit"
-brew "opencode"
 brew "starship"
 brew "tmux"
+brew "uv"
 brew "zoxide"
 brew "zsh-syntax-highlighting"
 
@@ -33,7 +30,6 @@ cask "spotify"
 cask "visual-studio-code"
 
 # Fonts
-cask "font-0xproto-nerd-font"
 cask "font-fira-code-nerd-font"
 cask "font-geist-mono-nerd-font"
 cask "font-hack-nerd-font"
