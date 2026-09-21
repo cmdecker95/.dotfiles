@@ -9,15 +9,7 @@ My dotfiles include:
 
 ## Usage
 
-Run `dotfiles.sh` to clone and source these on a Mac, whether to bootstrap a new one or get a fresh start on an old one.
-
-> Prerequisites (instructions below)
->
-> 1. Install Apple CLT
-> 2. Connect to GitHub
-> 3. Clone dotfiles repo
-
-## Prerequisites
+Run `dotfiles.sh` (meant for macOS).
 
 ### 1. Install the Apple Command Line Tools (CLT)
 
@@ -27,7 +19,7 @@ xcode-select --install
 
 ### 2. Connect to GitHub
 
-#### 2a. Generate SSH key on local machine
+#### Generate SSH key on local machine
 
 - Press `Enter` when prompted for file name.
 - Enter passphrase for key.
@@ -45,7 +37,7 @@ ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 pbcopy < ~/.ssh/id_ed25519.pub
 ```
 
-#### 2b. Add SSH key to GitHub settings
+#### Add SSH key to GitHub settings
 
 - **GitHub** > **Settings** > **SSH and GPG keys** > **New SSH key**
 - Click **Add SSH key** and enter passphrase.
