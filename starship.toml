@@ -4,12 +4,9 @@ $git_branch\
 $git_status\
 $fill\
 $python\
-$lua\
 $nodejs\
 $golang\
-$haskell\
 $rust\
-$ruby\
 $docker_context\
 $jobs\
 $cmd_duration\
@@ -46,13 +43,7 @@ symbol = ' '
 [python]
 style = 'teal'
 symbol = ' '
-format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
-pyenv_version_name = true
-pyenv_prefix = ''
-
-[lua]
-format = '[$symbol($version )]($style)'
-symbol = ' '
+format = '[${symbol}(${version} )(\($virtualenv\) )]($style)'
 
 [nodejs]
 style = 'blue'
@@ -62,32 +53,14 @@ symbol = ' '
 style = 'blue'
 symbol = ' '
 
-[haskell]
-style = 'blue'
-symbol = ' '
-
 [rust]
 style = 'orange'
 symbol = ' '
 
-[ruby]
-style = 'blue'
-symbol = ' '
-
-[package]
-symbol = '󰏗 '
-
-[aws]
-symbol = ' '
-style = 'yellow'
-format = '[$symbol($profile )(\[$duration\] )]($style)'
-
 [docker_context]
 symbol = ' '
 style = 'fg:#06969A'
-format = '[$symbol]($style) $path'
-detect_files = ['docker-compose.yml', 'docker-compose.yaml', 'Dockerfile']
-detect_extensions = ['Dockerfile']
+format = '[$symbol$context]($style) '
 
 [jobs]
 symbol = ' '
@@ -99,4 +72,3 @@ format = '[$symbol]($style)'
 min_time = 500
 style = 'fg:gray'
 format = '[$duration]($style)'
-
