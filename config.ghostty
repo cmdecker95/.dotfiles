@@ -1,6 +1,6 @@
 # hello <3
-font-family = "GeistMono Nerd Font"
-theme = dark:Catppuccin Frappe,light:Catppuccin Latte
+font-family = GeistMono Nerd Font
+theme = Everforest Dark Hard
 
 # Title bar
 # macos-titlebar-style = hidden
@@ -9,7 +9,7 @@ macos-titlebar-proxy-icon = hidden
 title=" "
 
 # Background
-background-opacity=0.5
+background-opacity=0.75
 background-blur=macos-glass-clear
 
 # Add a little padding
