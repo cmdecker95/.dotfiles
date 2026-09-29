@@ -1,1 +1,23 @@
 # hello <3
+font-family = "GeistMono Nerd Font"
+theme = dark:Catppuccin Frappe,light:Catppuccin Latte
+
+# Title bar
+# macos-titlebar-style = hidden
+macos-window-buttons = hidden
+macos-titlebar-proxy-icon = hidden
+title=" "
+
+# Background
+background-opacity=0.5
+background-blur=macos-glass-clear
+
+# Add a little padding
+window-padding-x = 8
+window-padding-y = 0
+window-padding-balance = false
+window-padding-color = extend
+
+# Fast close (full send)
+confirm-close-surface = false
+
