@@ -24,10 +24,15 @@ brew "python"
 
 # >>> CASK FORMULAE >>>
 
-# Apps
+# Basic Apps
 cask "brave-browser"
-cask "iterm2"
 cask "spotify"
+
+# Developer Apps
+cask "claude-code"
+cask "cursor"
+cask "ghostty"
+cask "iterm2"
 cask "visual-studio-code"
 
 # Fonts

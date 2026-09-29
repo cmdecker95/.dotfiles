@@ -9,8 +9,10 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 brew bundle --file "$HOME/.dotfiles/Brewfile"
 
 # plant configs on host
-mkdir -p "$HOME/.config"
-ln -sfn "$HOME/.dotfiles/starship.toml" "$HOME/.config/starship.toml"
+mkdir -p "$HOME/.config/ghostty"
+ln -sfn "$HOME/.dotfiles/starship.toml" "$XDG_CONFIG_HOME/starship.toml"
+ln -sfn "$HOME/.dotfiles/config.ghostty" "$XDG_CONFIG_HOME/ghostty/config"
+ln -sfn "$HOME/.dotfiles/config.ghostty" "$XDG_CONFIG_HOME/ghostty/config.ghostty"
 ln -sfn "$HOME/.dotfiles/.zprofile" "$HOME/.zprofile"
 ln -sfn "$HOME/.dotfiles/.zshrc" "$HOME/.zshrc"
 ln -sfn "$HOME/.dotfiles/.tmux.conf" "$HOME/.tmux.conf"

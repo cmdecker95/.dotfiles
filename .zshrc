@@ -25,6 +25,9 @@ bindkey -M viins '^P' up-history
 bindkey -M viins '^N' down-history
 bindkey -M viins '^R' history-incremental-search-backward
 
+# Config
+export XDG_CONFIG_HOME="$HOME/.config"
+
 # Bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
