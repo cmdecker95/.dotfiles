@@ -10,6 +10,7 @@ brew "httpie"
 brew "jq"
 brew "lazygit"
 brew "neovim"
+brew "nvm"
 brew "starship"
 brew "tmux"
 brew "uv"
@@ -26,21 +27,15 @@ brew "python"
 
 # Basic Apps
 cask "brave-browser"
-cask "spotify"
-
-# Developer Apps
-cask "claude-code"
-cask "cursor"
+cask "docker-desktop"
 cask "ghostty"
-cask "iterm2"
-cask "visual-studio-code"
+cask "raycast"
+cask "spotify"
+cask "vanilla"
+cask "1password"
 
 # Fonts
 cask "font-fira-code-nerd-font"
 cask "font-geist-mono-nerd-font"
 cask "font-hack-nerd-font"
-
-# Utils
-cask "1password"
-cask "raycast"
-cask "vanilla"
+cask "font-0xproto-nerd-font"
