@@ -1,74 +1,166 @@
-# format = """
-# $directory\
-# $git_branch\
-# $git_status\
-# $fill\
-# $python\
-# $nodejs\
-# $golang\
-# $rust\
-# $docker_context\
-# $jobs\
-# $cmd_duration\
-# $line_break\
-# $character"""
-#
-# add_newline = true
-#
-# [directory]
-# style = 'bold fg:dark_blue'
-# format = '[$path ]($style)'
-# truncation_length = 3
-# truncation_symbol = '…/'
-# truncate_to_repo = false
-#
-# [directory.substitutions]
-# 'Documents' = '󰈙'
-# 'Downloads' = ' '
-# 'Music' = ' '
-# 'Pictures' = ' '
-#
-# [git_branch]
-# style = 'fg:green'
-# symbol = ' '
-# format = '[on](white) [$symbol$branch ]($style)'
-#
-# [git_status]
-# style = 'fg:red'
-# format = '([$all_status$ahead_behind]($style) )'
-#
-# [fill]
-# symbol = ' '
-#
-# [python]
-# style = 'teal'
-# symbol = ' '
-# format = '[${symbol}(${version} )(\($virtualenv\) )]($style)'
-#
-# [nodejs]
-# style = 'blue'
-# symbol = ' '
-#
-# [golang]
-# style = 'blue'
-# symbol = ' '
-#
-# [rust]
-# style = 'orange'
-# symbol = ' '
-#
-# [docker_context]
-# symbol = ' '
-# style = 'fg:#06969A'
-# format = '[$symbol$context]($style) '
-#
-# [jobs]
-# symbol = ' '
-# style = 'red'
-# number_threshold = 1
-# format = '[$symbol]($style)'
-#
-# [cmd_duration]
-# min_time = 500
-# style = 'fg:gray'
-# format = '[$duration]($style)'
+# phosphor prompt on everforest dark hard
+"$schema" = "https://starship.rs/config-schema.json"
+
+add_newline = true
+palette = "everforest"
+continuation_prompt = "[ │](aqua) "
+
+format = """
+[╭─](bold aqua) $username$hostname$directory$git_branch$git_status$fill$jobs$python$bun$golang$rust$docker_context$cmd_duration$battery$time$status
+[╰─](bold aqua)$character"""
+
+[palettes.everforest]
+text = "#d3c6aa"
+red = "#e67e80"
+orange = "#e69875"
+yellow = "#dbbc7f"
+green = "#a7c080"
+aqua = "#83c092"
+blue = "#7fbbb3"
+purple = "#d699b6"
+muted = "#859289"
+
+[character]
+success_symbol = "[ λ](bold green)"
+error_symbol = "[ λ](bold red)"
+vimcmd_symbol = "[ λ](bold yellow)"
+vimcmd_replace_one_symbol = "[ λ](bold purple)"
+vimcmd_replace_symbol = "[ λ](bold purple)"
+vimcmd_visual_symbol = "[ λ](bold yellow)"
+
+[username]
+show_always = true
+style_user = "bold green"
+style_root = "bold red"
+format = "[$user]($style)"
+
+[hostname]
+ssh_only = true
+ssh_symbol = ""
+style = "bold aqua"
+format = "[@$hostname]($style)"
+
+[directory]
+style = "bold text"
+format = "[ ─ ](muted)[$path]($style)"
+truncation_length = 4
+truncation_symbol = "…/"
+truncate_to_repo = false
+home_symbol = "~"
+read_only = " "
+read_only_style = "red"
+
+[git_branch]
+symbol = " "
+style = "bold green"
+format = "[ ─ ](muted)[$symbol$branch]($style)"
+
+[git_status]
+style = "bold orange"
+format = "[ $all_status$ahead_behind]($style)"
+conflicted = " ⚡"
+ahead = " ⇡${count}"
+behind = " ⇣${count}"
+diverged = " ⇕⇡${ahead_count}⇣${behind_count}"
+untracked = "?"
+stashed = "≡"
+modified = "!"
+staged = "+"
+renamed = "»"
+deleted = "✘"
+
+[git_state]
+style = "bold yellow"
+format = "[\\($state( $progress_current/$progress_total)\\)]($style) "
+
+[fill]
+symbol = " "
+
+[jobs]
+symbol = "⚙ "
+style = "bold yellow"
+number_threshold = 1
+format = "[$symbol$number]($style) "
+
+[python]
+symbol = "py "
+style = "blue"
+format = "[$symbol${version}( \\($virtualenv\\))]($style) "
+
+# `node --version` cold-starts past the 500ms command timeout and stalls the prompt
+[nodejs]
+disabled = true
+
+[bun]
+symbol = "bn "
+style = "yellow"
+format = "[$symbol$version]($style) "
+
+[golang]
+symbol = "go "
+style = "aqua"
+format = "[$symbol$version]($style) "
+
+[rust]
+symbol = "rs "
+style = "orange"
+format = "[$symbol$version]($style) "
+
+[docker_context]
+symbol = "dk "
+style = "blue"
+format = "[$symbol$context]($style) "
+only_with_files = true
+
+[cmd_duration]
+min_time = 500
+style = "yellow"
+format = "[$duration]($style) "
+show_milliseconds = false
+
+[time]
+disabled = false
+style = "muted"
+format = "[$time]($style)"
+time_format = "%H:%M"
+
+[status]
+disabled = false
+style = "bold red"
+format = " [$symbol$status]($style)"
+symbol = "✖"
+success_symbol = ""
+recognize_signal_code = true
+
+[battery]
+full_symbol = ""
+charging_symbol = "⚡ "
+discharging_symbol = "↯ "
+format = "[$symbol$percentage]($style) "
+[[battery.display]]
+threshold = 25
+style = "bold red"
+
+[package]
+disabled = true
+
+[aws]
+disabled = true
+
+[gcloud]
+disabled = true
+
+[azure]
+disabled = true
+
+[kubernetes]
+disabled = true
+
+[terraform]
+disabled = true
+
+[nix_shell]
+disabled = true
+
+[container]
+disabled = true
