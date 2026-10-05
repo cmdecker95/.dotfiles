@@ -80,3 +80,10 @@ export NVM_DIR="$HOME/.nvm"
 local_sh="${0:A:h}/.local.sh"
 [ -s "$local_sh" ] && source "$local_sh"
 
+# zsh edit-command-line
+export EDITOR=nvim
+export VISUAL=nvim
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey '^X^E' edit-command-line
+
