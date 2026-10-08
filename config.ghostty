@@ -1,8 +1,8 @@
 # hello <3
 # font-family = GeistMono Nerd Font
-# font-family = Fira Code Nerd Font
+font-family = Fira Code Nerd Font
 # font-family = Hack Nerd Font
-font-family = 0xproto Nerd Font
+# font-family = 0xproto Nerd Font
 theme = Everforest Dark Hard
 
 # Title bar
