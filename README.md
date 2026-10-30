@@ -5,6 +5,7 @@ My dotfiles include:
 - aliases
 - shell config
 - tmux config
+- Herdr config
 - Brewfile
 
 ## Usage
@@ -62,3 +63,17 @@ git clone git@github.com:cmdecker95/.dotfiles.git ~/.dotfiles
 ```sh
 ~/.dotfiles/dotfiles.sh
 ```
+
+### Herdr
+
+The installer installs Herdr and links `herdr.toml` to `~/.config/herdr/config.toml`.
+To connect to Herdr on another machine over SSH, run:
+
+```sh
+herdr --remote <ssh-host>
+```
+
+In Herdr, press `Ctrl+Space`, then `Shift+Left` to close the pane immediately
+left of the focused pane. A popup asks for confirmation before terminating that
+pane's processes; if no left neighbor exists, it reports an error without closing
+anything. This shortcut uses `jq`, included in the Brewfile.

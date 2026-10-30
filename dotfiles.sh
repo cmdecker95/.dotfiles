@@ -16,6 +16,8 @@ ln -sfn "$HOME/.dotfiles/config.ghostty" "$XDG_CONFIG_HOME/ghostty/config.ghostt
 ln -sfn "$HOME/.dotfiles/.zprofile" "$HOME/.zprofile"
 ln -sfn "$HOME/.dotfiles/.zshrc" "$HOME/.zshrc"
 ln -sfn "$HOME/.dotfiles/.tmux.conf" "$HOME/.tmux.conf"
+mkdir -p "$HOME/.config/herdr"
+ln -sfn "$HOME/.dotfiles/herdr.toml" "$HOME/.config/herdr/config.toml"
 
 # rice up tmux
 if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
