@@ -24,6 +24,7 @@ alias ls='ls --color=auto'
 alias ll='ls -laF'
 alias mk='function _mk(){ mkdir "$1" && cd "$1"; };_mk'
 alias rmds='find ~ -name .DS_Store -delete'
+export PATH="/Users/christian/.local/bin:$PATH"
 
 #-----#
 # bun #
