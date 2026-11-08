@@ -47,6 +47,11 @@ esac
 
 [ui]
 prompt_new_tab_name = false
+sidebar_start_collapsed = true
+sidebar_collapsed_mode = "hidden"
+sidebar_width = 36
+sidebar_min_width = 36
+sidebar_max_width = 36
 tab_bar_position = "top"
 tab_bar_right = [
   { type = "hostname" },
