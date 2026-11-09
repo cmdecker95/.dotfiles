@@ -8,56 +8,19 @@ prefix = "ctrl+space"
 reload_config = "prefix+r"
 resize_mode = ""
 
-new_tab = ["prefix+c", "ctrl+alt+c"]
-next_tab = ["prefix+n", "ctrl+alt+]"]
-previous_tab = ["prefix+p", "ctrl+alt+["]
-switch_tab = "prefix+1..9"
-
-# Herdr's vertical split is tmux's split-window -h; horizontal is split-window -v.
-split_vertical = ["prefix+v", "ctrl+alt+d"]
-split_horizontal = ["prefix+minus", "ctrl+alt+shift+d"]
-
-# Keep prefix+hjkl resizing and use safe Ctrl+Alt+hjkl pane navigation.
-resize_pane_left = "prefix+h"
-resize_pane_down = "prefix+j"
-resize_pane_up = "prefix+k"
-resize_pane_right = "prefix+l"
-focus_pane_left = "ctrl+alt+h"
-focus_pane_down = "ctrl+alt+j"
-focus_pane_up = "ctrl+alt+k"
-focus_pane_right = "ctrl+alt+l"
-zoom = "prefix+m"
-detach = "prefix+d"
-
-[[keys.command]]
-key = "prefix+shift+left"
-type = "popup"
-description = "Close the pane to the left (confirm)"
-command = '''
-set -eu
-trap 'status=$?; if [ "$status" -ne 0 ]; then printf "\nClose-left failed. Press Enter to dismiss."; read -r answer; fi' EXIT
-neighbor=$("$HERDR_BIN_PATH" pane neighbor --pane "$HERDR_ACTIVE_PANE_ID" --direction left)
-target=$(printf '%s\n' "$neighbor" | jq -er '.result.neighbor.neighbor_pane_id // error("No pane to the left")')
-printf 'Close %s and terminate its processes? [y/N] ' "$target"
-read -r answer
-case "$answer" in
-  y|Y) "$HERDR_BIN_PATH" pane close "$target" ;;
-esac
-'''
-
 [ui]
-prompt_new_tab_name = false
+prompt_new_tab_name = true
+tab_bar_right = [
+  { type = "command", command = 'pmset -g batt | grep -Eo "\d+%"' },
+  { type = "datetime", format = "%H:%M" },
+]
 sidebar_start_collapsed = true
 sidebar_collapsed_mode = "hidden"
 sidebar_width = 36
 sidebar_min_width = 36
 sidebar_max_width = 36
 tab_bar_position = "top"
-tab_bar_right = [
-  { type = "hostname" },
-  { type = "datetime", format = "%H:%M" },
-]
 tab_bar_right_separator = " · "
 
 [ui.sound]
-enabled = false
+enabled = true
