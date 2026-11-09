@@ -3,7 +3,10 @@
 font-family = Fira Code Nerd Font
 # font-family = Hack Nerd Font
 # font-family = 0xproto Nerd Font
-theme = Everforest Dark Hard
+# theme = Catppuccin Mocha
+# theme = TokyoNight Night
+# theme = Kanagawa Wave
+theme = Catppuccin Mocha
 
 # Title bar
 # macos-titlebar-style = hidden

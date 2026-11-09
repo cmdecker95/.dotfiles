@@ -77,3 +77,9 @@ In Herdr, press `Ctrl+Space`, then `Shift+Left` to close the pane immediately
 left of the focused pane. A popup asks for confirmation before terminating that
 pane's processes; if no left neighbor exists, it reports an error without closing
 anything. This shortcut uses `jq`, included in the Brewfile.
+
+---
+
+## Colors
+
+Colors should be coordinated between the terminal (Ghostty in config.ghostty), the prompt (Starship in starship.toml), and the multiplexer (herdr in herdr.toml).

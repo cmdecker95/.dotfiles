@@ -92,6 +92,23 @@ alias pip='pip3'
 #-----------#
 command -v starship >/dev/null && eval "$(starship init zsh)"
 
+# Switch Ghostty theme + Starship palette: theme everforest|catppuccin|tokyonight|kanagawa
+# Herdr follows Ghostty (theme = "terminal"). Reload Ghostty with cmd+shift+, to apply.
+# Neovim picks the theme up on next launch.
+theme() {
+  local ghostty
+  case "$1" in
+    everforest) ghostty="Everforest Dark Hard" ;;
+    catppuccin) ghostty="Catppuccin Mocha" ;;
+    tokyonight) ghostty="TokyoNight Night" ;;
+    kanagawa)   ghostty="Kanagawa Wave" ;;
+    *) echo "usage: theme everforest|catppuccin|tokyonight|kanagawa" >&2; return 1 ;;
+  esac
+  sed -i '' -E "s/^theme = .*/theme = $ghostty/" "$HOME/.dotfiles/config.ghostty"
+  sed -i '' -E "s/^palette = .*/palette = \"$1\"/" "$HOME/.dotfiles/starship.toml"
+  mkdir -p "$HOME/.local/state" && echo "$1" > "$HOME/.local/state/theme" # read by nvim on startup
+}
+
 #------#
 # tmux #
 #------#

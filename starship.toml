@@ -2,7 +2,8 @@
 "$schema" = "https://starship.rs/config-schema.json"
 
 add_newline = true
-palette = "everforest"
+# everforest | catppuccin | tokyonight | kanagawa
+palette = "catppuccin"
 continuation_prompt = "[ │](aqua) "
 
 format = """
@@ -19,6 +20,39 @@ aqua = "#83c092"
 blue = "#7fbbb3"
 purple = "#d699b6"
 muted = "#859289"
+
+[palettes.catppuccin]
+text = "#cdd6f4"
+red = "#f38ba8"
+orange = "#fab387"
+yellow = "#f9e2af"
+green = "#a6e3a1"
+aqua = "#94e2d5"
+blue = "#89b4fa"
+purple = "#cba6f7"
+muted = "#7f849c"
+
+[palettes.tokyonight]
+text = "#c0caf5"
+red = "#f7768e"
+orange = "#ff9e64"
+yellow = "#e0af68"
+green = "#9ece6a"
+aqua = "#73daca"
+blue = "#7aa2f7"
+purple = "#bb9af7"
+muted = "#737aa2"
+
+[palettes.kanagawa]
+text = "#dcd7ba"
+red = "#e46876"
+orange = "#ffa066"
+yellow = "#e6c384"
+green = "#98bb6c"
+aqua = "#7aa89f"
+blue = "#7e9cd8"
+purple = "#957fb8"
+muted = "#727169"
 
 [character]
 success_symbol = "[ λ](bold green)"
